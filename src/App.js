@@ -37,7 +37,7 @@ function App() {
     var box = final
     box.push(newfruit);
     console.log(box);
-    setFinal(box)
+    setFinal([...box])
   }
   return (
     <div className="App">
