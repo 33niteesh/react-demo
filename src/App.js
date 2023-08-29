@@ -33,10 +33,16 @@ function App() {
     })
     alert(array)
   }
+  const pushto=()=>{
+    var box = final
+    box.push(newfruit);
+    console.log(box);
+    setFinal(box)
+  }
   return (
     <div className="App">
       <input onChange={(e)=>(setNew({label:e.target.value,checked:false}))}/>
-      <button onClick={()=>(box.push(newfruit),setFinal(box))}>add</button>
+      <button onClick={pushto}>add</button>
       {
         final?.map((checkbox,key) => {
           return (
